@@ -3,28 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="index.js" type="text/javascript" defer></script>
+    <script src="index.js" defer></script>
     <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="principal" id="primero">
-        <header>
-            <h1>Principal</h1>
-        </header>
-        <div class="body">
-            <button type="button" onclick="Siguiente()">Siguiente</button>
+    <div class="pagina_principal">
+        <div class="formulario">
+            <form action="">
+                <div id="iniciar_sesion">
+                    <h2>Login</h2>
+                    <input type="text" placeholder="Nombre de usuario" id="usuario_iniciar_sesion">
+                    <input type="password" placeholder="Contrasena" id="contrasena_iniciar_sesion">
+                    <button type="submit" onclick="IniciarSesion()">Login</button>
+                    <p>No tiene cuenta? <a href="#" onclick="paginaCrearCuenta()">Sign Up</a></p>
+                </div>
+                <div id="crear_cuenta">
+                    <h2>Sign Up</h2>
+                    <input type="text" placeholder="Nombre de usuario" id="usuario_crear_cuenta">
+                    <input type="email" placeholder="Email" id="email_crear_cuenta">
+                    <input type="password" placeholder="Contrasena" id="contrasena_crear_cuenta">
+                    <button type="submit" onclick="CrearCuenta()">Sign Up</button>
+                    <p>Ya tienes una cuenta? <a href="#" onclick="PaginaIniciarSesion()">Login</a></p>
+                </div>
+            </form>
         </div>
-        <footer></footer>
-    </div>
-    <div class="principal" id="segundo">
-        <header>
-            <h1>Segundo</h1>
-        </header>
-        <div class="body">
-            <button type="button" onclick="Principal()">Anterior</button>
+        <div class="otra_pagina" id="otra">
+            <img src="https://files.maldita.es/maldita/uploads/undated/foto%20gorila%20broma.jpg" alt="" srcset="">
         </div>
-        <footer></footer>
     </div>
 </body>
 </html>
